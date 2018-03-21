@@ -1,0 +1,9 @@
+{% if list_tarea %}
+    <ul>
+        {% for tarea in list_tarea %}
+            <li>{{ tarea.nombre }}, {{ tarea.fecha }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    No hay tareas
+{% endif %}
